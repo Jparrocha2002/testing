@@ -15,10 +15,9 @@ class Writer extends Novel
             birthdate varchar(20)
             )";
             $this->connect();
-            var_dump($this->sql($sql));
+            $this->sql($sql);
     }
 }
-$check = new Writer();
-$check->createtbl();
+
 
 ?>
