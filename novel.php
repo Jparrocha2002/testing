@@ -14,12 +14,11 @@ class Novel extends Database
             release_date text,
             description text
             )";
-
+        $this->connect();
         $this->sql($sql);
 
     }
 }
 $check = new Novel();
-$check->connect();
 $check->createTbl();
 ?>
